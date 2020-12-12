@@ -11,7 +11,7 @@ wlen = 1000;
 hop = fs*win_size;
 nfft = 4*wlen;
 w = sqrt(hann(nfft/4.53));
-% generate analysis and synthesis window
 
+% generate analysis and synthesis window
 [s,f,~] = spectrogram(signal,w ,hop, nfft, fs,'power');
 end

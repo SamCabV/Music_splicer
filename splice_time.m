@@ -1,3 +1,4 @@
+  
 function [s_spliced] = splice_time(s1, s2, t1_start, t1_stop, t2_start, t2_stop)
 s1_start = round(map(t1_start, 0, 30, 1, length(s1)));
 s1_stop = round(map(t1_stop, 0, 30, 1, length(s1)));

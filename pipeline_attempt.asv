@@ -6,8 +6,7 @@ double_spect = [s1 s2];
 
 stop_s1 = map(15, 0, 30, 1, length(s1));
 
-min_list = zeros((length(s1)-stop_s1):2);
-min_list = transpose(min_list);
+min_list = zeros(2:length(s1)-stop_s1);
 for i = stop_s1:length(s1)
     [min_cut, I] = end_weight(s1,s2,i);
     min_list(1,i) = min_cut;
@@ -15,11 +14,11 @@ for i = stop_s1:length(s1)
 end
 [total_min,I_total_min] = min(min_list);
 
-start_s2 = min_list(2,I_total_min);
+start_s2 = min_list(2,I_total_min)
 
 [~,best] = min(min_list);
 
-split = splice_vect(s1,s2, 1, stop_s1, start_s2, length(s2));
+split = splice_vect(s1,s2, 1, stop_s1, start, length(s2));
 split_perf = [s1 s2];
 
 [x,t_exp] = to_signal(split,fs1);
