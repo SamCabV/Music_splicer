@@ -12,19 +12,25 @@ end
 spec_list(1) = [];
 [global_min, I_global] = findGlobalDifference(s1, spec_list(1:end),15);
 [~,~,start_s2,stop_s1] = findMinDifference(s1, spec_list{I_global},15);
-cut_list{1,1} = s1(:,(1:s1_stop));
+cut_list{1,1} = s1(:,(1:stop_s1));
 
-for i = 2:(length(spec_list)-1)
+for i = 2:(length(spec_list))
    s1 = spec_list{I_global}(:,(start_s2:end));
-   time_left = map(length(s1), 1, length(spec_list{I_global}), 0, 30);
+   time_left = map(length(s1), 1, length(spec_list{I_global}), 0, 29);
    spec_list(I_global) = [];
    [global_min, I_global] = findGlobalDifference(s1, spec_list(1:end),time_left);
    [~,~,start_s2,stop_s1] = findMinDifference(s1, spec_list{I_global},time_left);
-   cut_list{1,i} = s1(:,(1:stop_s1));
+   if size(s1,2) > stop_s1 
+        cut_list{1,i} = s1(:,(1:stop_s1));
+   else
+        cut_list{1,i} = s1(:,(1:end));
+   end
 end
 
-%split = splice_vect(s1,spec_list{I_global}, 1, stop_s1, start_s2, length(spec_list{I_global}));
-
+split = splice_vect(cut_list{1},cut_list{2}, 1, size(cut_list{1},2), 1, size(cut_list{2},2));
+for i = 3:length(cut_list)
+    split = splice_vect(split,cut_list{i}, 1, size(split,2), 1, size(cut_list{i},2));
+end
 
 [x,t_exp] = to_signal(split,fs);
-sound(x,fs1)
+%sound(x,fs)
