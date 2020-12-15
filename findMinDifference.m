@@ -1,5 +1,5 @@
 function [best_min, I_best_min,start_s2, stop_s1] = findMinDifference(s1, s2, t_song)
-stop_s1 = map(t_song, 0, 29, 1, size(s2,2));
+stop_s1 = map(t_song, 0, 39, 1, size(s2,2));
 stop_s1 = round(stop_s1);
 if (stop_s1 < size(s1,2))
     min_list = zeros((size(s1,2)-stop_s1),3);
