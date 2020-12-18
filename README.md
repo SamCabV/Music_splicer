@@ -44,7 +44,7 @@ For a generalized formula, we can simply take the difference in value for an i-p
 
 Below is the equation we implemented for calculating this difference.
 
-INSERT EQUATION HERE
+![Difference Formula](figs/min_equation.JPG)
 
 ## Mashups
 
