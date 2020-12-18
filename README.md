@@ -1,5 +1,7 @@
 # QEAMS - Qualitative Eclectic Automated Music Splicer
 
+\\( a^2 = b^2 \\)
+
 By Samuel Cabrera Valencia and Daniel Arnott
 
 As part of our final project in Quantitative Engineering Analysis 2 (QEA 2), we explored the possibility of using spectrogram analysis and different signal processing techniques to see if we can write a program that would automatically create a playlist "mashup" given a user-inputted playlist of full-length songs.
