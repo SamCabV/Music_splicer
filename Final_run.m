@@ -1,6 +1,7 @@
 % Just run the function, click on a folder full of WAV files, and you're
 % good to go. use Sound to listen to the mix, or audiowite to save it as a
 % wav file
+fs = 44100
 [x,t_exp] = function_pipeline();
 
 
