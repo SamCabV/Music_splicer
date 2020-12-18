@@ -18,7 +18,7 @@ This will be more similar to the "AutoMashUpper" detailed in the research paper 
 
 ## What is a Spectrogram
 
-PUT SPECTROGRAM ISO VIEW IMAGE HERE
+<img src="figs/isometric_spect.png" width="300" height="200" />
 
 A spectrogram is a visual representation of the spectrum of frequencies that a signal possesses over time. It technically has three measurable quantities, all 3 of which can be seen on the example spectrogram here (left).
 
@@ -26,7 +26,7 @@ This is an example of a spectrogram for one of the songs we used while gathering
 
 ## Function Workflow
 
-PUT FUNCTION WORKFLOW IMAGE HERE
+<img src="figs/top_level_pipelin.png" width="300" height="200" />
 
 With this pipeline, a user can simply run the program on a folder full of .wav files and produce a mix with ease!
 
@@ -36,7 +36,7 @@ Using MATLAB's built-in Spectrogram function, we can convert input signals into 
 
 ## Algorithm Workflow
 
-PUT ALGO WORFKLOW PICTURE HERE
+<img src="figs/algo_pipeline.png" width="300" height="200" />
 
 ## Finding Similarity Between Two Songs
 
@@ -44,7 +44,7 @@ For a generalized formula, we can simply take the difference in value for an i-p
 
 Below is the equation we implemented for calculating this difference.
 
-PUT EQUATION THING HERE
+<img src="figs/min_equation.JPG" width="300" height="200" />
 
 ## Mashups
 
