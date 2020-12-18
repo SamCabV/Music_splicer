@@ -56,6 +56,11 @@ Here is one of the mashups we've made using this program. Enjoy! (Unfortunately 
 
 Copyright Disclaimer: Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.
 
+## Conclusion
+
+Going back to the question at the beginning, Can matching time frame slices of a song's spectrogram be used to sync up music?
+
+The answer is yes, just not perfectly. The architecture of music is complex and includes a lot of information like bpm and tempo which is lost when only looking at frequencies at periods of time. That being said, some of the transitions in the some of the mashups are very impressive, almost as if the algorithm knew a lot more than what it does about when to cut and start the song. At the same time, there are a lot of underwhelimg transitions and at its worst the algorithm can produce some very jarring or seemingly illogical transitions between songs. For the limited information the code works with, we were satisfied with the results and it definitly made some awesome if not flawed mashups. 
 
 ## Resources
 
