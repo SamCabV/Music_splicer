@@ -48,17 +48,14 @@ INSERT EQUATION HERE
 
 ## Mashups
 
-Here is one of the mashups we've made using this program. Enjoy! (Unfortunately we can only show this mashup according to Fair Use. We made a bunch of other mashups that came out really well, however!)
+Here is one of the mashups we've made using this program. Enjoy! (Unfortunately we can only show a few mashups according to Fair Use. We made a bunch of other mashups that came out really well, however!)
 
 [royalty_free_mix](/royalty_free_mix.wav)
 
-click <audio id="ID004" source src="bilingual_pop_n_stuff.wav"></audio><button onclick="playAudio('ID004')" type="button">play4</button> and then <audio id="ID003" source src="003.mp3"></audio><button onclick="playAudio('ID003')" type="button">play3</button>
-<script>
-function playAudio(audio_element) {
-	var x = document.getElementById(audio_element);
-	x.play();
-}
-</script>
+[bilingual_muisc_mix](/bilingual_pop_n_stuff.wav)
+
+Copyright Disclaimer: Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.
+
 
 ## Resources
 
