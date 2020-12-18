@@ -40,7 +40,7 @@ Using MATLAB's built-in Spectrogram function, we can convert input signals into 
 
 ## Finding Similarity Between Two Songs
 
-For a generalized formula, we can simply take the difference in value for an i-point DFT at each point I. For each difference, square it, add all of these together and take the square root. We can experimentally determine what a minimum "threshold" value is for this distance and use it as a cutoff for deciding whether to change the song or keep playing it.
+For a generalized formula, we can simply take the difference in value for an i-point DFT at each descrete point in time. For each difference, square it, add all of these together and take the square root. The algorithm then sorts through all of these values to find the minimun of difference and uses this as the index to stop the current song and start the next. 
 
 Below is the equation we implemented for calculating this difference.
 
