@@ -8,7 +8,7 @@ As part of our final project in Quantitative Engineering Analysis 2 (QEA 2), we�
 
 ## Introduction
 
-### Governing Question: Can matching time frame slices of a song's spectrogram be used to sync up music?
+Governing Question: Can matching time frame slices of a song's spectrogram be used to sync up music?
 
 In this project we want to explore the possibility of using spectrogram analysis and different signal processing techniques to see if we can create a program that can automatically find the best fit song to mash up with a user-inputted sing given the frequencies at a defined moment in the user-inputted song.
 
