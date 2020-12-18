@@ -12,7 +12,7 @@ Governing Question: Can matching time frame slices of a song's spectrogram be u
 
 In this project we want to explore the possibility of using spectrogram analysis and different signal processing techniques to see if we can create a program that can automatically find the best fit song to mash up with a user-inputted sing given the frequencies at a defined moment in the user-inputted song.
 
-This is very similar to the technology that the song finding app "Shazam" uses except for some key differences in implementation. Shazam procedurally generates a spectrogram based off the audio input it is getting from the phone's microphone and finds the song that most fits with this generated spectrogram through a large library of spectrograms that the app has saved. In our case, we will likely have a smaller library for mixing songs, and we, as users, will decide at what point in the inputted song that we want to select a new song to be "mashed in."
+The popular app "Shazam" is a great example of spectrogram analysis applied to music. Shazam procedurally generates a spectrogram based off the audio input it is getting from the phone's microphone and finds the song that most fits with this generated spectrogram through a large library of spectrograms that the app has saved. In our case, we have a smaller library for mixing songs and the program decides at what point in the current song that it will select a new song to be "mashed in" based off of criteria described in the "Finding Similarity Between Two Songs" section.
 
 This will be more similar to the "AutoMashUpper" detailed in the research paper (cited in the Resources section) by a team at the National Institute of Advanced Industrial Science and Technology (AIST), Japan.
 
@@ -40,17 +40,27 @@ Using MATLAB's built-in Spectrogram function, we can convert input signals into 
 
 ## Finding Similarity Between Two Songs
 
-For a generalized formula, we can simply take the difference in value for an i-point DFT at each point I. For each difference, square it, add all of these together and take the square root. We can experimentally determine what a minimum "threshold" value is for this distance and use it as a cutoff for deciding whether to change the song or keep playing it.
+For a generalized formula, we can simply take the difference in value for an i-point DFT at each descrete point in time. For each difference, square it, add all of these together and take the square root. The algorithm then sorts through all of these values to find the minimun of difference and uses this as the index to stop the current song and start the next. 
 
 Below is the equation we implemented for calculating this difference.
 
-INSERT EQUATION HERE
+![Difference Formula](figs/min_equation.JPG)
 
 ## Mashups
 
-Here is one of the mashups we've made using this program. Enjoy! (Unfortunately we can only show this mashup according to Fair Use. We made a bunch of other mashups that came out really well, however!)
+Here is one of the mashups we've made using this program. Enjoy! (Unfortunately we can only show a few mashups according to Fair Use. We made a bunch of other mashups that came out really well, however!)
 
 [royalty_free_mix](/royalty_free_mix.wav)
+
+[bilingual_music_mix](/bilingual_pop_n_stuff.wav)
+
+Copyright Disclaimer: Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.
+
+## Conclusion
+
+Going back to the question at the beginning, Can matching time frame slices of a song's spectrogram be used to sync up music?
+
+The answer is yes, just not perfectly. The architecture of music is complex and includes a lot of information like bpm and tempo which is lost when only looking at frequencies at periods of time. That being said, some of the transitions in the some of the mashups are very impressive, almost as if the algorithm knew a lot more than what it does about when to cut and start the song. At the same time, there are a lot of underwhelimg transitions and at its worst the algorithm can produce some very jarring or seemingly illogical transitions between songs. For the limited information the code works with, we were satisfied with the results and it definitly made some awesome if not flawed mashups. 
 
 ## Resources
 
@@ -69,3 +79,9 @@ Cooper, Trey. “How Shazam Works.” Medium, Medium, 29 Jan. 2018, https://medi
 carykh. “Computer Tries to Replicate My Voice!” YouTube, YouTube, 15 Aug. 2017, www.youtube.com/watch?v=jSsMqjMcRAg.
 
 carykh. “AI Evolves to Compose 3 Hours of Jazz!” YouTube, YouTube, 4 July 2017, www.youtube.com/watch?v=nA3YOFUCn4U.
+
+## How to Run the Code
+
+You'll need a few dependancies, the biggest is the [signal processing tool](https://www.mathworks.com/products/signal.html) box from MATWORKS and the [ISTFT with MATLAB](https://www.mathworks.com/matlabcentral/fileexchange/45577-inverse-short-time-fourier-transform-istft-with-matlab) Add-On by Hristo Zhivomirov both of these can be found in the Add-On tab in the MATLAB Dashboard. 
+
+Once these are downloaded, simply compile a folder full of .wav file music and run the ```Final_run.m``` script, select the folder (remmber to add it to your MATLAB path too) and let it run. This function should export a variable known as ```x```, simply put ```x``` to play run ```Sound(x, fs)``` and to save the song run ```audiowrite("<SONG_NAME>.wav", x, fs)``` and you are set!
