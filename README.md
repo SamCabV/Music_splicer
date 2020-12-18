@@ -52,7 +52,7 @@ Here is one of the mashups we've made using this program. Enjoy! (Unfortunately 
 
 [royalty_free_mix](/royalty_free_mix.wav)
 
-[bilingual_muisc_mix](/bilingual_pop_n_stuff.wav)
+[bilingual_music_mix](/bilingual_pop_n_stuff.wav)
 
 Copyright Disclaimer: Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.
 
