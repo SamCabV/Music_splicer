@@ -52,6 +52,14 @@ Here is one of the mashups we've made using this program. Enjoy! (Unfortunately 
 
 [royalty_free_mix](/royalty_free_mix.wav)
 
+click <audio id="ID004" source src="bilingual_pop_n_stuff.wav"></audio><button onclick="playAudio('ID004')" type="button">play4</button> and then <audio id="ID003" source src="003.mp3"></audio><button onclick="playAudio('ID003')" type="button">play3</button>
+<script>
+function playAudio(audio_element) {
+	var x = document.getElementById(audio_element);
+	x.play();
+}
+</script>
+
 ## Resources
 
 MATLAB Library
