@@ -1,6 +1,6 @@
 # QEAMS - Qualitative Eclectic Automated Music Splicer
 
-\\( a^2 = b^2 \\)
+\\[ a^2 = b^2 + c^2 \\]
 
 By Samuel Cabrera Valencia and Daniel Arnott
 
