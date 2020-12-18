@@ -60,7 +60,7 @@ Readings / Videos
 
 Davies, Matthew & Hamel, Philippe & Yoshii, Kazuyoshi & Goto, Masataka. (2014). AutoMashUpper: Automatic Creation of Multi-Song Music Mashups. Audio, Speech, and Language Processing, IEEE/ACM Transactions on. 22. 1726-1737. 10.1109/TASLP.2014.2347135. 
 
-Cooper, Trey. “How Shazam Works.” Medium, Medium, 29 Jan. 2018, medium.com/@treycoopermusic/how-shazamworks-d97135fb4582.
+Cooper, Trey. “How Shazam Works.” Medium, Medium, 29 Jan. 2018, https://medium.com/@treycoopermusic/how-shazam-works-d97135fb4582.
 
 carykh. “Computer Tries to Replicate My Voice!” YouTube, YouTube, 15 Aug. 2017, www.youtube.com/watch?v=jSsMqjMcRAg.
 
