@@ -50,7 +50,7 @@ INSERT EQUATION HERE
 
 Here is one of the mashups we've made using this program. Enjoy! (Unfortunately we can only show this mashup according to Fair Use. We made a bunch of other mashups that came out really well, however!)
 
-[royalty_free_mix](/royalty_free_mix.wava63f917)
+[royalty_free_mix](/royalty_free_mix.wav)
 
 ## Resources
 
