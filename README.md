@@ -1,7 +1,5 @@
 # QEAMS - Qualitative Eclectic Automated Music Splicer
 
-\\[ a^2 = b^2 + c^2 \\]
-
 By Samuel Cabrera Valencia and Daniel Arnott
 
 As part of our final project in Quantitative Engineering Analysis 2 (QEA 2), we explored the possibility of using spectrogram analysis and different signal processing techniques to see if we can write a program that would automatically create a playlist "mashup" given a user-inputted playlist of full-length songs.
@@ -28,7 +26,7 @@ This is an example of a spectrogram for one of the songs we used while gathering
 
 ## Function Workflow
 
-<img src="figs/top_level_pipelin.png" width="700" height="200" />
+<img src="figs/top_level_pipelin.png" width="900" height="200" />
 
 With this pipeline, a user can simply run the program on a folder full of .wav files and produce a mix with ease!
 
@@ -46,7 +44,7 @@ For a generalized formula, we can simply take the difference in value for an i-p
 
 Below is the equation we implemented for calculating this difference.
 
-<img src="figs/min_equation.JPG" width="1000" height="200" />
+INSERT EQUATION HERE
 
 ## Mashups
 
