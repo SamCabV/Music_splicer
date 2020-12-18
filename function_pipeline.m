@@ -1,3 +1,4 @@
+function [x,t_exp] = function_pipeline()
 myDir = uigetdir; %gets directory
 myFiles = dir(fullfile(myDir,'*.mp3'));
 fs = 44100;
@@ -8,13 +9,13 @@ spec_list = cell(1,length(myFiles));
 cut_list = cell(1,length(myFiles)-1);
 
 for k = 1:length(myFiles)
-    [song, fs] = audioread(myFiles(k).name,samples);
+    [song, fs] = audioread(myFiles(k).name, samples);
     song_spect = to_spectrogram(song, fs);
     spec_list{1,k} = song_spect;
 end
 spec_list(1) = [];
-[global_min, I_global] = findGlobalDifference(s1, spec_list(1:end),15);
-[~,~,start_s2,stop_s1] = findMinDifference(s1, spec_list{I_global},15);
+[global_min, I_global] = findGlobalDifference(s1, spec_list(1:end),25);
+[~,~,start_s2,stop_s1] = findMinDifference(s1, spec_list{I_global},25);
 cut_list{1,1} = s1(:,(1:stop_s1));
 
 for i = 2:(length(spec_list))
@@ -36,4 +37,4 @@ for i = 3:length(cut_list)
 end
 
 [x,t_exp] = to_signal(split,fs);
-sound(x,fs)
+end

@@ -1,4 +1,0 @@
-split = splice_vect(cut_list{1},cut_list{2}, 1, size(, start_s2, length(spec_list{I_global}));
-for i = 1:length(cut_list)
-    all_specs(1,i) = cut_list{i}
-end
