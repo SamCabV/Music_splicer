@@ -79,3 +79,9 @@ Cooper, Trey. “How Shazam Works.” Medium, Medium, 29 Jan. 2018, https://medi
 carykh. “Computer Tries to Replicate My Voice!” YouTube, YouTube, 15 Aug. 2017, www.youtube.com/watch?v=jSsMqjMcRAg.
 
 carykh. “AI Evolves to Compose 3 Hours of Jazz!” YouTube, YouTube, 4 July 2017, www.youtube.com/watch?v=nA3YOFUCn4U.
+
+## How to Run the Code
+
+You'll need a few dependancies, the biggest is the [signal processing tool](https://www.mathworks.com/products/signal.html) box from MATWORKS and the [ISTFT with MATLAB](https://www.mathworks.com/matlabcentral/fileexchange/45577-inverse-short-time-fourier-transform-istft-with-matlab) Add-On by Hristo Zhivomirov both of these can be found in the Add-On tab in the MATLAB Dashboard. 
+
+Once these are downloaded, simply compile a folder full of .wav file music and run the ```Final_run.m``` script, select the folder (remmber to add it to your MATLAB path too) and let it run. This function should export a variable known as ```x```, simply put ```x``` to play run ```Sound(x, fs)``` and to save the song run ```audiowrite("<SONG_NAME>.wav", x, fs)``` and you are set!
